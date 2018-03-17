@@ -1,0 +1,16 @@
+[
+{
+  "modid": "domesticcraft",
+  "name": "DomesticCraft",
+  "description": "Make your world more domestic!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["CJMinecraft"],
+  "credits": "For my amazing subscribers!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
