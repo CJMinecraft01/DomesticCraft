@@ -6,7 +6,7 @@ import cjminecraft.industrialtech.utils.registries.annotations.RegisterItem;
 import cjminecraft.industrialtech.utils.registries.annotations.RegisterItemBlock;
 import net.minecraft.block.Block;
 
-public class ITBlocks {
+public class DCBlocks {
 
     @RegisterBlock(registryName = "photon_generator")
     @RegisterItemBlock(registryName = "photon_generator")

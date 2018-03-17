@@ -1,5 +1,5 @@
 package cjminecraft.domesticcraft.init;
 
-public class ITItems {
+public class DCItems {
 
 }

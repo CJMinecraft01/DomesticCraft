@@ -1,8 +1,8 @@
 package cjminecraft.domesticcraft.utils.registries;
 
 import cjminecraft.domesticcraft.DomesticCraft;
-import cjminecraft.domesticcraft.init.ITBlocks;
-import cjminecraft.domesticcraft.init.ITItems;
+import cjminecraft.domesticcraft.init.DCBlocks;
+import cjminecraft.domesticcraft.init.DCItems;
 import cjminecraft.domesticcraft.utils.registries.annotations.RegisterBlock;
 import cjminecraft.domesticcraft.utils.registries.annotations.RegisterItem;
 import cjminecraft.domesticcraft.utils.registries.annotations.RegisterItemBlock;
@@ -24,7 +24,7 @@ public class Registerer {
     public static void onItemRegister(RegistryEvent.Register<Item> event) {
         DomesticCraft.LOGGER.info("Searching for items to register");
         int registeredItems = 0;
-        for (Field field : ITItems.class.getDeclaredFields()) {
+        for (Field field : DCItems.class.getDeclaredFields()) {
             if (field.isAnnotationPresent(RegisterItem.class)) try {
                 RegisterItem details = field.getAnnotation(RegisterItem.class);
                 Item item = (Item) field.get(null);
@@ -45,7 +45,7 @@ public class Registerer {
             }
         }
 
-        for (Field field : ITBlocks.class.getDeclaredFields()) {
+        for (Field field : DCBlocks.class.getDeclaredFields()) {
             if (field.isAnnotationPresent(RegisterItemBlock.class)) try {
                 RegisterItemBlock details = field.getAnnotation(RegisterItemBlock.class);
                 Block block = (Block) field.get(null);
@@ -84,7 +84,7 @@ public class Registerer {
     public static void onBlockRegister(RegistryEvent.Register<Block> event) {
         DomesticCraft.LOGGER.info("Searching for blocks to register");
         int registeredBlocks = 0;
-        for (Field field : ITBlocks.class.getDeclaredFields()) {
+        for (Field field : DCBlocks.class.getDeclaredFields()) {
             if (field.isAnnotationPresent(RegisterBlock.class)) try {
                 RegisterBlock details = field.getAnnotation(RegisterBlock.class);
                 Block block = (Block) field.get(null);
