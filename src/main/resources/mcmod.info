@@ -11,6 +11,8 @@
   "credits": "For my amazing subscribers!",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "useDependencyInformation": true,
+  "requiredMods": ["cjcore"],
+  "dependencies": ["cjcore"]
 }
 ]

@@ -1,0 +1,13 @@
+package cjminecraft.domesticcraft.utils.registries.annotations;
+
+import java.lang.annotation.*;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.FIELD})
+public @interface RegisterItem {
+
+    String registryName();
+
+    String unlocalizedName() default "";
+
+}
