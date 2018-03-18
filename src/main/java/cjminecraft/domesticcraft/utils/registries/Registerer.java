@@ -146,6 +146,8 @@ public class Registerer {
                             ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(new ResourceLocation(DomesticCraft.MODID, details.variants()[meta]), "inventory"));
                     else
                         ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
+                    if(block instanceof ICustomStateMapper)
+                        ModelLoader.setCustomStateMapper(block, ((ICustomStateMapper) block).getStateMapper());
                 } else {
                     DomesticCraft.LOGGER.error("Unable to register renders for block: " + field.getName() + "! The block cannot be null!");
                 }
