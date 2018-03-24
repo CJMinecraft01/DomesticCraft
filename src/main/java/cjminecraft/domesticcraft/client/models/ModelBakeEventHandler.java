@@ -10,11 +10,11 @@ public class ModelBakeEventHandler {
 
     @SubscribeEvent
     public static void onModelBakeEvent(ModelBakeEvent event) {
-        Object object = event.getModelRegistry().getObject(SurfaceBakedModel.VARIANT_TAG);
+        Object object = event.getModelRegistry().getObject(CounterBakedModel.VARIANT_TAG);
         if(object instanceof IBakedModel) {
             IBakedModel originalModel = (IBakedModel) object;
-            SurfaceBakedModel customModel = new SurfaceBakedModel(originalModel);
-            event.getModelRegistry().putObject(SurfaceBakedModel.VARIANT_TAG, customModel);
+            CounterBakedModel customModel = new CounterBakedModel(originalModel);
+            event.getModelRegistry().putObject(CounterBakedModel.VARIANT_TAG, customModel);
         }
     }
 }

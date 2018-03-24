@@ -1,0 +1,36 @@
+{
+	"parent": "minecraft:block/block",
+    "textures": {
+		"base": "minecraft:blocks/planks_oak",
+		"surface": "minecraft:blocks/stone_slab_top",
+		"particle": "minecraft:blocks/planks_oak"
+    },
+    "elements": [
+        {
+            "name": "Base",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 14.0, 15.0 ], 
+            "faces": {
+                "north": { "texture": "#base", "uv": [ 0.0, 0.0, 16.0, 14.0 ] },
+                "east": { "texture": "#base", "uv": [ 0.0, 0.0, 15.0, 14.0 ] },
+                "south": { "texture": "#base", "uv": [ 0.0, 0.0, 16.0, 14.0 ] },
+                "west": { "texture": "#base", "uv": [ 0.0, 0.0, 15.0, 14.0 ] },
+                "up": { "texture": "#base", "uv": [ 0.0, 0.0, 16.0, 15.0 ] },
+                "down": { "texture": "#base", "uv": [ 0.0, 0.0, 16.0, 15.0 ] }
+            }
+        },
+        {
+            "name": "Surface",
+            "from": [ 0.0, 14.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#surface", "uv": [ 0.0, 0.0, 16.0, 2.0 ] },
+                "east": { "texture": "#surface", "uv": [ 0.0, 0.0, 16.0, 2.0 ] },
+                "south": { "texture": "#surface", "uv": [ 0.0, 0.0, 16.0, 2.0 ] },
+                "west": { "texture": "#surface", "uv": [ 0.0, 0.0, 16.0, 2.0 ] },
+                "up": { "texture": "#surface", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#surface", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        }
+    ]
+}
